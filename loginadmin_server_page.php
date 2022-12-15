@@ -20,5 +20,6 @@ if($login_email==null||$login_pasword==null){
 }elseif($login_email!=null&&$login_pasword!=null){
     $obj = new data();
     $obj->setconnection();
+    $obj->adminLogin($login_email,$login_pasword);
    
 }

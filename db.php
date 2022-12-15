@@ -6,7 +6,7 @@ class db
     function setconnection(){
         try {
          $this->connection=new PDO("mysql:host=localhost;dbname=library_managment","root","");
-        echo "Connection Done";
+       // echo "Connection Done";
         }catch(PDOException $e){
             echo "error";
         }
