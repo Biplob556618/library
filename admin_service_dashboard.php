@@ -22,11 +22,58 @@ $adminid= $_SESSION["adminid"];
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="">
     </head>
+    <style>
+.imglogo{
+    margin: auto;
+    width: 50%;
+  
+}
+.innerdiv{
+    text-align: center;
+    margin:100px;
+    background-color: aqua;
+}
+.Leftinnerdiv{
+
+    float:left;
+    width: 25%;
+}
+.greenbtn{
+background-color: rgb(16,170,16);
+color:white;
+width: 95%;
+height: 40px; 
+margin-top: 8px;
+
+
+} 
+
+    </style>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <div class ="container">
+         <div class= "innerdiv">
+        <div class="row"><img class="imglogo" src="image/library_img.png"/></div>
+         <div class= "Leftinnerdiv">
+          <button class= "greenbtn">Admin</button>
+          <br>
+                <Button class="greenbtn" onclick="openpart('addbook')" >  ADD BOOK</Button>
+                <Button class="greenbtn" onclick="openpart('bookreport')" >  BOOK REPORT</Button>
+                <Button class="greenbtn" onclick="openpart('bookrequestapprove')"> BOOK REQUESTS</Button>
+                <Button class="greenbtn" onclick="openpart('addperson')"> ADD STUDENT</Button>
+                <Button class="greenbtn" onclick="openpart('studentrecord')"> STUDENT REPORT</Button>
+                <Button class="greenbtn"  onclick="openpart('issuebook')"> ISSUE BOOK</Button>
+                <Button class="greenbtn" onclick="openpart('issuebookreport')"> ISSUE REPORT</Button>
+                <a href="index.php"><Button class="greenbtn" > LOGOUT</Button></a>
+
+         </div>
+
+         </div>   
+            
+        </div>
+
         <script src="" async defer></script>
     </body>
 </html>
